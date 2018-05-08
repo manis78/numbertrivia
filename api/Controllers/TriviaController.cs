@@ -12,17 +12,14 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class TriviaController : Controller
     {
-
+        //Added comments for screenshots
         // GET api/trivia/number
         [HttpGet("{number}")]
         public async Task<TriviaResponse> GetAsync(int number)
         {
             if(number == 666)
-
             {
-
                 return new TriviaResponse { Text = "The number of the beast.", Number = 666, Found = true, Type = "hardcoded trivia" };
-
             }
             //Call numbersapi.com and return results
             var httpClient = new HttpClient();
