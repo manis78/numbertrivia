@@ -20,7 +20,7 @@ namespace tests
         [InlineData("trivia")]
         public async Task ReturnsTextForTheNumber42(string controllerName)
         {
-            var response = await _client.GetAsync($"/api/{controllerName}/43");
+            var response = await _client.GetAsync($"/api/{controllerName}/42");
             response.EnsureSuccessStatusCode();
             var stringResponse = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<TriviaResponse>(stringResponse);
