@@ -17,6 +17,11 @@ namespace api.Controllers
         [HttpGet("{number}")]
         public async Task<TriviaResponse> GetAsync(int number)
         {
+            if(number == 444)
+            {
+                return new TriviaResponse { Text = "Triple four", Number = 444, Found = true, Type = "hardcoded trivia" };
+            }
+            
             if(number == 666)
             {
                 return new TriviaResponse { Text = "The number of the beast.", Number = 666, Found = true, Type = "hardcoded trivia" };
