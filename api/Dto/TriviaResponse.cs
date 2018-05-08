@@ -4,7 +4,7 @@ namespace api.Dto
 {
     public class TriviaResponse
     {
-        [JsonProperty("text")]
+        [JsonProperty("trivia api demo text")]
         public string Text { get; set; }
 
         [JsonProperty("number")]
@@ -15,5 +15,8 @@ namespace api.Dto
 
         [JsonProperty("type")]
         public string Type { get; set; }
+
+        
+
     }
 }
