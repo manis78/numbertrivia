@@ -12,6 +12,7 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class TriviaController : Controller
     {
+        //Test run
         //Added comments for screenshots
         // GET api/trivia/number
         [HttpGet("{number}")]
